@@ -1,6 +1,5 @@
 package com.soapservice.importWSDL;
 
-import com.soapservice.importWSDL.service.AtendeCliente;
 import jakarta.xml.ws.Service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,10 +21,11 @@ public class ImportWsdlApplication {
 
 			Service service = Service.create(url, qName);
 
-			AtendeCliente port = service.getPort(AtendeCliente.class);
+			/* execute after build */
 
-			XMLGregorianCalendar xmlGregorianCalendar = port.buscaDataAtual();
-			System.out.println("O dia de hoje é: " + xmlGregorianCalendar.getDay());
+			//AtendeCliente port = service.getPort(AtendeCliente.class);
+			//XMLGregorianCalendar xmlGregorianCalendar = port.buscaDataAtual();
+			//System.out.println("O dia de hoje é: " + xmlGregorianCalendar.getDay());
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
