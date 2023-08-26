@@ -1,2 +1,2 @@
 # SOAP-examples
-Um repositório com projetos simples utilizando protocolo soap com diferentes métodos
+Esse repositório tem por objetivo criar projetos simples utilizando diferentes abordagens do protocolo SOAP
